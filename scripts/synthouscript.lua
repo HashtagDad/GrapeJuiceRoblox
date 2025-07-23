@@ -1,6 +1,6 @@
 -- Warning : Some executors, especially bad ones might bug out resulting into you not being able to leave, be cautious.
 
-repeat task.wait() until isrbxactive() -- i think this is already a checking but why not?
+repeat task.wait() until isrbxactive()
 
 -- fixed syntax errors - 1
 
@@ -88,7 +88,7 @@ end
 
 function disablelimitations()
     game:GetService("RunService").RenderStepped:Connect(function()
-        mousemoverel(-50000, -50000)
+        mousemoverel(-50000, 50000)
         keypress(0x1B)
         keyrelease(0x1B)
     end)
