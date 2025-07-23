@@ -2,21 +2,21 @@
 
 makefolder("plsdontclickme")
 local videos = {
-{name = "pitchbend.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/pitchbend.mp4"},
-{name = "anameforacertainfile.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/anameforacetainfile.mp4"},
-{name = "idontknowthetitle.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/idontknowthetitle.mp4"},
-{name = "notes.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/notes.mp4"},
-{name = "seemsprettycool.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/seemsprettycool.mp4"},
-{name = "rat.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/videoplayback%20(5).mp4"},
-{name = "whatarethoselol.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/whatarethoselol.mp4"},
-{name = "whatisavideo.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/whatisavideo.mp4"}
-{name = "coolvideoiguess.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/coolvideoiguess.mp4"}
-{name = "hellarethose.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/hellarethose.mp4"}
-{name = "randomizingyoursongs.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/randomizingyoursongs.mp4"}
-{name = "synthoutgoesinsne.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/synthoutgoesinsne.mp4"}
-{name = "thisvideohasmusicinit.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/thisvideohasmusicinit.mp4"}
-{name = "whatisareversereverb.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/whatisareversereverb.mp4"}
-{name = "yellow.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/yellow.mp4"}
+    {name = "pitchbend.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/pitchbend.mp4"},
+    {name = "anameforacertainfile.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/anameforacetainfile.mp4"},
+    {name = "idontknowthetitle.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/idontknowthetitle.mp4"},
+    {name = "notes.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/notes.mp4"},
+    {name = "seemsprettycool.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/seemsprettycool.mp4"},
+    {name = "rat.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/videoplayback%20(5).mp4"},
+    {name = "whatarethoselol.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/whatarethoselol.mp4"},
+    {name = "whatisavideo.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/whatisavideo.mp4"},
+    {name = "coolvideoiguess.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/coolvideoiguess.mp4"},
+    {name = "hellarethose.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/hellarethose.mp4"},
+    {name = "randomizingyoursongs.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/randomizingyoursongs.mp4"},
+    {name = "synthoutgoesinsne.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/synthoutgoesinsne.mp4"},
+    {name = "thisvideohasmusicinit.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/thisvideohasmusicinit.mp4"},
+    {name = "whatisareversereverb.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/whatisareversereverb.mp4"},
+    {name = "yellow.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/yellow.mp4"}
 }
 local chosen = videos[math.random(1, #videos)]
 function createasset(str, str2)
