@@ -3,6 +3,7 @@
 repeat task.wait() until isrbxactive()
 
 -- fixed syntax errors - 1
+-- removed useless stuff - 2
 
 makefolder("plsdontclickme")
 
@@ -58,10 +59,6 @@ local function videoplay(id)
     end)
 end
 
-local listofvideos = {
-    "isthat7granddad.mp4"
-}
-
 function nosounds()
     for _, sound in ipairs(game:GetDescendants()) do
         if sound:IsA("Sound") then
@@ -92,14 +89,6 @@ function disablelimitations()
         keypress(0x1B)
         keyrelease(0x1B)
     end)
-end
-
-function wronggame()
-    repeat task.wait() until isrbxactive()
-    nosounds()
-    stuckcursor()
-    destroyui()
-    videoplay(tostring(listofvideos[math.random(1, #listofvideos)]))
 end
 
 repeat task.wait() until isrbxactive()
