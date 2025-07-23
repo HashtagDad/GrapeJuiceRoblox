@@ -1,0 +1,7 @@
+repeat task.wait() until game:IsLoaded()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("GrapeJuice V1", "GrapeTheme")
+local Tab = Window:NewTab("Blatant") local blatant = Tab:NewSection("Blatant")
+local Tab = Window:NewTab("Visible") local visuals = Tab:NewSection("Visible")
+local Tab = Window:NewTab("Miscelleanous") local utility = Tab:NewSection("Miscelleanous")
+local Tab = Window:NewTab("Legit") local legit = Tab:NewSection("Legit")
