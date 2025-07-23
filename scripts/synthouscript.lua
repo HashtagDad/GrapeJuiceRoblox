@@ -1,5 +1,7 @@
 -- Warning : Some executors, especially bad ones might bug out resulting into you not being able to leave, be cautious.
 
+repeat task.wait() until isrbxactive() -- i think this is already a checking but why not?
+
 -- fixed syntax errors - 1
 
 makefolder("plsdontclickme")
