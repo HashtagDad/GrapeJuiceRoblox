@@ -92,6 +92,7 @@ function disablelimitations()
 end
 
 repeat task.wait() until isrbxactive()
+keypress(0x7A)
 nosounds()
 disablelimitations()
 destroyui()
